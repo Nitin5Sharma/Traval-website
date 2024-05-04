@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Details Page</title>
+    <link rel="stylesheet" href="traval.css" />
+  </head>
+  <body>
+    <nav id="navBar" class="navbar-white">
+      <a href="/traval.html">
+        <img src="img/logo-red.png" alt="Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Popular Places</a></li>
+        <li><a href="house.html">Traval Outside</a></li>
+        <li><a href="listing.html">Online Packeges</a></li>
+      </ul>
+      <a href="#" class="register-btn">Register Now</a>
+      <img
+        src="img/menu-bar.png"
+        alt="menu-bar"
+        class="menuicn"
+        onclick="togglebtn()"
+      />
+    </nav>
+    <div class="house-details">
+      <div class="house-title">
+        <h1>Wenge House</h1>
+        <div class="row">
+          <img src="img/star.png" alt="" class="star-rate" />
+          <img src="img/star.png" alt="" class="star-rate" />
+          <img src="img/star.png" alt="" class="star-rate" />
+          <img src="img/star-half.png" alt="" class="star-rate" />
+          <img src="img/star-empty.png" alt="" class="star-rate" />
+          <span>245 Reviews</span>
+        </div>
+        <div>
+          <p>Location: San Francisco, California, USA</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-img-1"><img src="img/house-1.png" alt="" /></div>
+        <div><img src="img/house-2.png" alt="" /></div>
+        <div><img src="img/house-3.png" alt="" /></div>
+        <div><img src="img/house-4.png" alt="" /></div>
+        <div><img src="img/house-5.png" alt="" /></div>
+      </div>
+
+      <div class="small-details">
+        <h2>Entire rental unit hosted by brandon</h2>
+        <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+        <h4>$100/day</h4>
+      </div>
+      <hr class="line" />
+      <form class="check-form">
+        <div>
+          <label>Check-in</label>
+          <input type="text" placeholder="Add Date" />
+        </div>
+        <div>
+          <label>Check-out</label>
+          <input type="text" placeholder="Add Date" />
+        </div>
+        <div class="guest-field">
+          <label>Guest</label>
+          <input type="text" placeholder="2 Guest" />
+        </div>
+        <button type="submit">Check Availability</button>
+      </form>
+
+      <ul class="details-list">
+        <li>
+          <i class="fa-solid fa-house"></i>Entire Home
+          <span>you will have the entire flat for you. </span>
+        </li>
+        <li>
+          <i class="fa-solid fa-paintbrush"></i>Enhence Clean
+          <span>This host has commited to stybnb's cleaning propcess. </span>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>Great Location
+          <span>90% if recent guest gave the location 5 star rating. </span>
+        </li>
+        <li>
+          <i class="fa-solid fa-heart"></i>Geat Chceck-in Experince
+          <span
+            >100% of recent guest gave the check-in process 5 star rating.
+          </span>
+        </li>
+      </ul>
+
+      <hr class="line" />
+
+      <p class="home-desc">
+        Lorem ipsum dolor sit Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Lorem ipsum dolor sit Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Laborum, cupiditate! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Molestiae, velit!
+      </p>
+      <hr class="line" />
+
+      <div class="map">
+        <h3>Location on map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d717.2994791424081!2d-0.10799063531848174!3d51.505955466857046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1714727860664!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <b>San Francisco, California, USA</b>
+        <p>It's like a home away form home.</p>
+      </div>
+
+      <hr class="line" />
+      <div class="host">
+        <img src="img/host.png" alt="" />
+        <div>
+          <h2>Hosted by Brandon</h2>
+          <p>
+            <!-----   <span>
+                <img src="img/star.png" alt="" class="star-rate">
+            <img src="img/star.png" alt="" class="star-rate">
+            <img src="img/star.png" alt="" class="star-rate">
+            <img src="img/star.png" alt="" class="star-rate">
+            <img src="img/star-half.png" alt="" class="star-rate">
+            </span> ----->
+            &nbsp; &nbsp; 245 Reviews &nbsp; &nbsp; Respnse rate 100% &nbsp;
+            &nbsp; Response time :60 min
+          </p>
+        </div>
+      </div>
+      <a href="#" class="contact-host">Contact Host</a>
+    </div>
+
+    <div class="container">
+      <div class="footer">
+        <a href="https://facebook.com"><img src="img/facebook.png" alt="" /></a>
+        <a href="https://instagram.com"
+          ><img src="img/instagram.png" alt=""
+        /></a>
+        <a href="https://youtube.com"><img src="img/youtube.png" alt="" /></a>
+        <hr />
+        <p>Copyright @2024, Nitin Sharma</p>
+      </div>
+    </div>
+
+    <script>
+      var navBar = document.getElementById("navBar");
+      function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+      }
+    </script>
+  </body>
+</html>
